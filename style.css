@@ -19,11 +19,7 @@ body {
   width: 340px;
   margin-right: 0.5rem;
 }
-@media (max-width: 1500px) {
-  .sidebar {
-    width: 280px;
-  }
-}
+
 
 .main-content {
   background-color: #121212;
@@ -332,7 +328,7 @@ input[type="range"] {
 }
 
 .artist-card {
-  width: 150px;
+  width: 9.375rem;
   border-radius: 50%;
   padding: 1rem;
   margin-left: 1.5rem;
@@ -349,3 +345,46 @@ input[type="range"] {
   transition-timing-function: ease-in;
   transition-duration: 0.5s;
 }
+
+
+/* making responsive */
+@media (max-width: 1500px) {
+  .sidebar {
+    width: 290px;
+  }
+  .nav-option {
+    line-height: 2rem;
+  }
+  .nav-option i {
+  font-size: 1.2rem;
+}
+.nav-option a {
+  font-size: 0.9rem;
+  margin-left: 0.8rem;
+}
+.box {
+  height: 6rem;
+  background-color: #232323;
+  border-radius: 0.8rem;
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 0.7rem .8rem;
+}
+.box-p1 {
+  font-size: .86rem;
+  font-weight: 590;
+  line-height: 0.4rem;
+}
+.box-p2 {
+  font-size: 0.7rem;
+  line-height: 0.5rem;
+}
+.badge {
+  border-radius: 100px;
+  padding: 0.2rem 1.1rem;
+  font-weight: 550;
+  margin-top: 0.7 rem;
+  height: 1.9rem;
+  width: fit-content;
+}
+}
+
