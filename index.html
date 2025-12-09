@@ -1,48 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="icon" href="./assists/logo.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./assists/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="main">
-        <div class="sidebar">
-            <div class="nav">
-                <div class="nav-option" style="opacity: 1;">
-                    <i class="fa-solid fa-house"></i>
-                    <a href="#">Home</a>
-                </div>
-                <div class="nav-option">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a href="#">Search</a>
-                </div>
-            </div>
-            <div class="library">
-                <div class="options">
-                    <div class="lib-option nav-option">
-                        <img src="./assists/library_icon.png">
-                        <a href="#">Your Library</a>
-                    </div>
-                    <div class="icons">
-                        <i class="fa-solid fa-plus"></i>
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-                <div class="lib-box">
-
-                </div>
-            </div>
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1">
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
         </div>
-        <div class="main-content">main content</div>
-        <div class="music-player">music player</div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="./assists/library_icon.png" />
+              <a href="#">Your Library</a>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">Create your first playlist</p>
+              <p class="box-p2">It's easy.we'll help you</p>
+              <button class="badge">Create playlist</button>
+            </div>
+
+            <div class="box">
+              <p class="box-p1">Let's find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you update on new episodes</p>
+              <button class="badge">Browse podcasts</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="sticky-nav">
+          <div class="sticky-nav-icons">
+            <div class="nav-img">
+              <img src="./assists/backward_icon.png" class="navigation" />
+            </div>
+            <div class="nav-img">
+              <img src="./assists/forward_icon.png" class="hide navigation" />
+            </div>
+          </div>
+          <div class="sticky-nav-options">
+            <button class="badge nav-item hide">Explore Premium</button>
+            <button class="badge nav-item dark-badge">
+              <i class="fa-regular fa-circle-down" style="margin-right: 5px"></i
+              >Install App
+            </button>
+            <i class="fa-regular fa-user nav-item"></i>
+          </div>
+        </div>
+
+        <h2>Recently Played</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assists/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+        </div>
+
+        <h2>Trending now near you</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assists/card2img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./assists/card3img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./assists/card4img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./assists/trending1.jpg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./assists/trending2.jpg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+
+          <div class="card">
+            <img src="./assists/trending3.jpg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./assists/trending4.jpg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./assists/trending5.jpg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+        </div>
+
+        <h2>Featured Charts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./assists/card5img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your weekly update of the most played tracks right now - Global.
+              ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./assists/card6img.jpeg" class="card-img" />
+            <p class="card-title">Top Songs - India</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./assists/card1img.jpeg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/region_global_default.jpg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/region_us_default.jpg" class="card-img" />
+            <p class="card-title">Top 50 - Global</p>
+            <p class="card-info">
+              Your daily updates of the most played tracks ...
+            </p>
+          </div>
+        </div>
+        <h2>Podcasts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="./more assists/podcast1.jpg" class="card-img" />
+            <p class="card-title">Brain Breeze</p>
+            <p class="card-info">
+              Fresh ideas in short bursts ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/podcast10.jpg" class="card-img" />
+            <p class="card-title">Midnight Pixels</p>
+            <p class="card-info">
+              Late-night thoughts in tiny bites ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/podcast11.jpg" class="card-img" />
+            <p class="card-title">Quiet Chaos</p>
+            <p class="card-info">
+              Calm talks about messy life ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/podcast2.jpg" class="card-img" />
+            <p class="card-title">Snack-Sized Wisdom</p>
+            <p class="card-info">
+              Small lessons, big impact ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/podcast3.jpg" class="card-img" />
+            <p class="card-title">Two-Minute Mindset</p>
+            <p class="card-info">
+              Fast thoughts for busy people ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/podcast4.jpg" class="card-img" />
+            <p class="card-title">Echo Pocket</p>
+            <p class="card-info">
+              Small stories that linger ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/podcast5.jpg" class="card-img" />
+            <p class="card-title">Unfiltered Bits</p>
+            <p class="card-info">
+              Raw opinions in mini form ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/podcast6.jpg" class="card-img" />
+            <p class="card-title">Daily Spark Plug</p>
+            <p class="card-info">
+              Quick energy for your day ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/podcast7.jpg" class="card-img" />
+            <p class="card-title">Tiny Talks Radio</p>
+            <p class="card-info">
+              Short chats, simple vibes ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/podcast8.jpg" class="card-img" />
+            <p class="card-title">Random Ripple</p>
+            <p class="card-info">
+              Little ideas that spread far ...
+            </p>
+          </div>
+          <div class="card">
+            <img src="./more assists/podcast9.jpg" class="card-img" />
+            <p class="card-title">Mini Mind Drops</p>
+            <p class="card-info">
+              Mini Mind Drops ...
+            </p>
+          </div>
+        </div>
+        <h2>Artists</h2>
+        <div class="artist-cards-container">
+          <div class="artist-card">
+            <img src="./artists/artists1.jpg" class="artist-card-img">
+            <p class="card-title">Arijit Singh</p>
+            <p class="card-info">
+              Artist
+            </p>
+          </div>
+          <div class="artist-card">
+            <img src="./artists/artists2.jpeg" class="artist-card-img">
+            <p class="card-title">Armaan Malik</p>
+            <p class="card-info">
+              Artist
+            </p>
+          </div>
+          <div class="artist-card">
+            <img src="./artists/artists3.webp" class="artist-card-img">
+            <p class="card-title">Vishal Dadlani</p>
+            <p class="card-info">
+              Artist
+            </p>
+          </div>
+          <div class="artist-card">
+            <img src="./artists/artists4.webp" class="artist-card-img">
+            <p class="card-title">Shirley Shetia</p>
+            <p class="card-info">
+              Artist
+            </p>
+          </div>
+          <div class="artist-card">
+            <img src="./artists/artists5.webp" class="artist-card-img">
+            <p class="card-title">Neha kakkar</p>
+            <p class="card-info">
+              Artist
+            </p>
+          </div>
+          <div class="artist-card">
+            <img src="./artists/artists8.webp" class="artist-card-img">
+            <p class="card-title">Stebin Ben</p>
+            <p class="card-info">
+              Artist
+            </p>
+          </div>
+          <div class="artist-card">
+            <img src="./artists/artists9.webp" class="artist-card-img">
+            <p class="card-title">Palak Muchhal</p>
+            <p class="card-info">
+              Artist
+            </p>
+          </div>
+          <div class="artist-card">
+            <img src="./artists/artists6.webp" class="artist-card-img">
+            <p class="card-title">Shreya Ghosal</p>
+            <p class="card-info">
+              Artist
+            </p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="music-player">
+        <div class="album">
+          <div class="album-img">
+            <img
+              src="./homeWork assists/album_picture (1).jpeg"
+              style="height: 3.5rem; margin-left: 0.8rem"
+            />
+          </div>
+
+          <div class="album-info">
+            <p class="album-info-title">Daylight</p>
+            <p class="album-info-description">David Kushner</p>
+          </div>
+          <div class="album-icons">
+            <img
+              src="./homeWork assists/album_icon1 (1).png"
+              style="height: 1.5rem; margin-left: 2rem; opacity: 0.8"
+              class="album-icon"
+            />
+            <img
+              src="./homeWork assists/album_icon2 (1).png"
+              style="height: 2.5rem; margin-left: 0.8rem; opacity: 0.8"
+              class="album-icon"
+            />
+          </div>
+        </div>
+        <div class="player">
+          <div class="player-controls">
+            <img src="./assists/player_icon1.png" class="player-control-icon" />
+            <img src="./assists/player_icon2.png" class="player-control-icon" />
+            <img
+              src="./assists/player_icon3.png"
+              class="player-control-icon"
+              style="opacity: 1; height: 2rem"
+            />
+            <img src="./assists/player_icon4.png" class="player-control-icon" />
+            <img src="./assists/player_icon5.png" class="player-control-icon" />
+          </div>
+          <div class="playback-bar">
+            <div class="slider-container">
+              <span id="currentTime" style="font-size: 0.85rem">0:00</span>
+              <input
+                type="range"
+                min="0"
+                max="240"
+                value="0"
+                step="1"
+                id="musicRange"
+              />
+              <span id="totalDuration" style="font-size: 0.85rem">4:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="controls">
+          <div class="controls-icons">
+            <img
+              src="./homeWork assists/controls_icon1 (1).png"
+              class="controls-icon"
+              style="height: 2.6rem"
+            />
+            <img
+              src="./homeWork assists/controls_icon2 (1).png"
+              class="controls-icon"
+              style="height: 2.6rem"
+            />
+            <img
+              src="./homeWork assists/controls_icon3 (1).png"
+              class="controls-icon"
+              style="height: 1.58rem; opacity: 0.8"
+            />
+            <img
+              src="./homeWork assists/controls_icon4 (1).png"
+              class="controls-icon"
+              style="height: 1.4rem; opacity: 0.7"
+            />
+            <img
+              src="./homeWork assists/controls_icon5 (1).png"
+              class="controls-icon"
+              style="height: 3rem"
+            />
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="50"
+            step="1"
+            value="10"
+            class="sound-range"
+          />
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
