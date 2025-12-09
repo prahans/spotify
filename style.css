@@ -19,6 +19,12 @@ body {
   width: 340px;
   margin-right: 0.5rem;
 }
+@media (max-width: 1500px) {
+  .sidebar {
+    width: 250px;
+  }
+}
+
 .main-content {
   background-color: #121212;
   border-radius: 1rem;
