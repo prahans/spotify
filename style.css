@@ -20,7 +20,6 @@ body {
   margin-right: 0.5rem;
 }
 
-
 .main-content {
   background-color: #121212;
   border-radius: 1rem;
@@ -318,9 +317,6 @@ input[type="range"] {
 .controls-icon {
   cursor: pointer;
 }
-.sound-range {
-  margin-right: 3rem;
-}
 
 .artist-cards-container {
   display: flex;
@@ -346,7 +342,6 @@ input[type="range"] {
   transition-duration: 0.5s;
 }
 
-
 /* making responsive */
 @media (max-width: 1500px) {
   .sidebar {
@@ -356,35 +351,79 @@ input[type="range"] {
     line-height: 2rem;
   }
   .nav-option i {
-  font-size: 1.2rem;
-}
-.nav-option a {
-  font-size: 0.9rem;
-  margin-left: 0.8rem;
-}
-.box {
-  height: 6rem;
-  background-color: #232323;
-  border-radius: 0.8rem;
-  margin: 0.5rem 0 0.5rem 0;
-  padding: 0.7rem .8rem;
-}
-.box-p1 {
-  font-size: .86rem;
-  font-weight: 590;
-  line-height: 0.4rem;
-}
-.box-p2 {
-  font-size: 0.7rem;
-  line-height: 0.5rem;
-}
-.badge {
-  border-radius: 100px;
-  padding: 0.2rem 1.1rem;
-  font-weight: 550;
-  margin-top: 0.7 rem;
-  height: 1.9rem;
-  width: fit-content;
-}
+    font-size: 1.2rem;
+  }
+  .nav-option a {
+    font-size: 0.9rem;
+    margin-left: 0.8rem;
+  }
+  .box {
+    height: 6rem;
+    background-color: #232323;
+    border-radius: 0.8rem;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 0.7rem 0.8rem;
+  }
+  .box-p1 {
+    font-size: 0.86rem;
+    font-weight: 590;
+    line-height: 0.4rem;
+  }
+  .box-p2 {
+    font-size: 0.7rem;
+    line-height: 0.5rem;
+  }
+  .badge {
+    border-radius: 100px;
+    padding: 0.2rem 1.1rem;
+    font-weight: 550;
+    margin-top: 0.7 rem;
+    height: 1.9rem;
+    width: fit-content;
+  }
 }
 
+.sound-tracker-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+input[id="soundRange"] {
+  /* Reset defaults */
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  width: 60%; /* Make the slider take full width of its container */
+  outline: none;
+  height: 0.2rem;
+  border-radius: 0.2rem;
+  margin-left: 0.5rem;
+
+  /* Key styles for the progress fill effect */
+  background-image: linear-gradient(#04aa6d, #04aa6d); /* Orange fill color */
+  background-repeat: no-repeat;
+  background-color: #d3d3d3; /* Remaining track color (gray) */
+  background-size: 0% 100%; /* Start at 0% covered */
+}
+
+/* Optional: Style the thumb/handle */
+input[id="soundRange"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background: #0956fbe9; /* Orange thumb color */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+input[id="soundRange"]::-moz-range-thumb {
+  width: 0.9rem;
+  height: 0.9rem;
+  border: none;
+  border-radius: 50%;
+  background: #0956fbe9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}

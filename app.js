@@ -39,3 +39,32 @@ updateMusicPlayerDisplay(rangeInput);
 rangeInput.addEventListener("input", function () {
   updateMusicPlayerDisplay(this);
 });
+
+//sound tracker
+// --- Sound Tracker Logic (Track Fill Only) ---
+
+const soundRangeInput = document.getElementById("soundRange");
+
+// Function to update only the track fill percentage
+function updateSoundTrackerTrack(inputElement) {
+  const val = inputElement.value;
+  const min = inputElement.min;
+  const max = inputElement.max;
+
+  // Calculate the fill percentage
+  const percentage = ((val - min) / (max - min)) * 100;
+
+  // Apply the percentage to the background-size property to create the fill effect
+  inputElement.style.backgroundSize = `${percentage}% 100%`;
+}
+
+// Check if the element exists before running
+if (soundRangeInput) {
+  // Initialize the track fill on load (based on the initial 'value' attribute)
+  updateSoundTrackerTrack(soundRangeInput);
+
+  // Update the track fill every time the user moves the slider
+  soundRangeInput.addEventListener("input", function () {
+    updateSoundTrackerTrack(this);
+  });
+}
