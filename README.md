@@ -72,7 +72,7 @@ This project helped me practice:
 
 ![Home Page](./screenshots/home1.png)
 
-<!-- ![Home Page 2](./screenshots/home2.png) -->
+![Home Page 2](./screenshots/home2.png)
 
 ---
 
