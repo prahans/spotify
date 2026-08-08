@@ -68,7 +68,10 @@ This project helped me practice:
 
 ## 📸 Screenshot
 
-Add a screenshot of your project here.
+### Home Page
+
+![Home Page 1](./screenshots/home1.png)
+![Home Page 2](./screenshots/home2.png)
 
 ---
 
